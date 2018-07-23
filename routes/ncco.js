@@ -13,7 +13,7 @@ router.get('/', function(req, res, next) {
 router.get('/answer', function(req, res, next) {
     var actionTalk = {
         action: "talk",
-        text: "You are joining a conference that was created using CUBES Voice API."
+        text: "You are joining a conference that was created using CUBE's Voice API."
     };
 
     var actionConversation = {
