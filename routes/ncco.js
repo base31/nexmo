@@ -18,7 +18,9 @@ router.get('/answer', function(req, res, next) {
 
     var actionConversation = {
         action: "conversation",
-        name: "nexmo-conference"
+        name: "conversation-"+req.query.conference_id,
+        startOnEnter: "false",
+        musicOnHoldUrl: ["https://nexmo-community.github.io/ncco-examples/assets/phone-ringing.mp3"]
     };
 
     var ncco = [];
