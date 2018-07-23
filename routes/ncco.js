@@ -17,7 +17,7 @@ router.get('/answer', function(req, res, next) {
     };
 
     var actionStream ={
-        action: "conversation",
+        action: "stream",
         streamUrl: [
             "https://nexmo-community.github.io/ncco-examples/assets/voice_api_audio_streaming.mp3"
         ]
