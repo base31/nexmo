@@ -4,7 +4,7 @@ var router = express.Router();
 /* GET ncco objects */
 router.get('/', function(req, res, next) {
     var ncco = {
-      message: 'NCCO Index'
+      message: 'Nexmo NCCO Index'
     };
 
     res.json(ncco);
