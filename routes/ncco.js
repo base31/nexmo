@@ -31,8 +31,8 @@ router.get('/answer', function(req, res, next) {
     };
 
     var ncco = [];
-    //ncco.push(actionTalk);
-    ncco.push(actionStream);
+    ncco.push(actionTalk);
+    //ncco.push(actionStream);
 
     res.json(ncco);
 });
