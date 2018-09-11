@@ -11,9 +11,9 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/externalScript', function(request, response, next) {
-    console.log("request.method    :", JSON.stringify(request.method))
-    console.log("request.query : ", JSON.stringify(request.query))
-    console.log("request.body : ", JSON.stringify(request.body))
+    console.log("request.method    :", JSON.stringify(request.method));
+    console.log("request.query : ", JSON.stringify(request.query));
+    console.log("request.body : ", JSON.stringify(request.body));
     response.set("content-type", "text/xml");
     if (request.query.exiting !== "true" && request.query.sip_from_uri) {
         /**
